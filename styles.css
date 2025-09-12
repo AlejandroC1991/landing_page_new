@@ -4086,6 +4086,669 @@ width: 100%;
     }
 }
 
+/* Tech Stack Section */
+.tech-stack-section {
+    background: #000000;
+    padding: 120px 24px;
+    color: white;
+}
+
+.tech-stack-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tech-stack-header {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.tech-stack-subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    color: #9CA3AF;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.tech-stack-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+    margin: 0;
+   
+}
+
+.title-highlight {
+    color: white;
+}
+
+.title-secondary {
+    color: #9CA3AF;
+}
+
+.tech-stack-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.tech-stack-left {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-stack-code-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tech-stack-right {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-stack-story {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.story-content {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    max-width: 280px;
+}
+
+.story-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.story-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9CA3AF;
+    margin: 0 0 24px 0;
+}
+
+.watch-video-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.watch-video-btn:hover {
+    opacity: 0.8;
+}
+
+.play-icon {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.tech-stack-dev-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+/* Status Bar Section */
+.status-bar-section {
+   
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.status-bar-container {
+    width: 30%;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 6px 16px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.status-bar-track {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: scroll-status-infinite 25s linear infinite;
+    width: fit-content;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-dot.green {
+    background-color: #00ff00;
+}
+
+.status-dot.yellow {
+    background-color: #ffff00;
+}
+
+.status-dot.red {
+    background-color: #ff0000;
+}
+
+.status-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.status-count {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+@keyframes scroll-status-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design for Status Bar */
+@media (max-width: 768px) {
+    .status-bar-container {
+        width: 80%;
+        padding: 4px 12px;
+    }
+    
+    .status-bar-section {
+        padding: 10px 0;
+    }
+    
+    .status-bar-track {
+        gap: 30px;
+        animation-duration: 20s;
+    }
+    
+    .status-text {
+        font-size: 11px;
+    }
+    
+    .status-count {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .status-bar-container {
+        width: 90%;
+        padding: 4px 10px;
+    }
+    
+    .status-bar-track {
+        gap: 20px;
+    }
+}
+
+/* Balance Innovation Section */
+.balance-innovation-section {
+    background: #ffffff;
+    padding: 120px 24px;
+}
+
+.balance-innovation-container {
+    /* max-width: 1200px; */
+    width: 30%;
+    margin: 0 auto;
+}
+
+.balance-innovation-content {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.balance-innovation-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #000000;
+    margin: 0 0 40px 0;
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.balance-innovation-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.balance-text-paragraph {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0 0 24px 0;
+    text-align: left;
+}
+
+.balance-text-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.balance-innovation-card {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: #e8e6e3;
+}
+
+.card-image-section {
+    flex: 1;
+    position: relative;
+    padding: 5px;
+}
+
+.insight-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.card-content-section {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.insight-badge {
+    display: inline-block;
+    background: #FF6B35;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.insight-date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 12px;
+}
+
+.insight-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0;
+}
+
+/* Responsive Design for Balance Innovation Section */
+@media (max-width: 768px) {
+    .balance-innovation-section {
+        padding: 80px 24px;
+    }
+    
+    .balance-innovation-title {
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+    
+    .balance-innovation-content {
+        margin-bottom: 60px;
+    }
+    
+    .balance-text-paragraph {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .balance-innovation-card {
+        flex-direction: column;
+        max-width: 500px;
+    }
+    
+    .card-content-section {
+        padding: 24px;
+    }
+    
+    .insight-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .balance-innovation-title {
+        font-size: 32px;
+    }
+    
+    .balance-text-paragraph {
+        font-size: 14px;
+    }
+    
+    .card-content-section {
+        padding: 20px;
+    }
+    
+    .insight-title {
+        font-size: 16px;
+    }
+}
+
+/* Metrics Section */
+.metrics-section {
+    background: #f3f1ee;
+    padding: 80px 24px 120px 24px;
+}
+
+.metrics-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.metrics-heading {
+    text-align: center;
+    font-weight: 500;
+    color: #0b0b0b;
+    line-height: 1.25;
+    max-width: 820px;
+    margin: 0 auto 40px auto;
+}
+
+.metrics-strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.metrics-sub {
+    display: block;
+    font-size: 22px;
+    color: #6b6b6b;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr 120px 1fr;
+    grid-auto-rows: 160px;
+    gap: 12px 12px;
+}
+
+.metric-tile {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tile-accent {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, #2f2f2f, #9557ff 60%, #ff4d5a 95%);
+}
+
+.tile-accent-2 { background: linear-gradient(145deg, #d85324, #6b5b4e 60%); }
+.tile-accent-3 { background: linear-gradient(145deg, #f45a2a, #7a6a39 60%); }
+.tile-accent-4 { background: linear-gradient(145deg, #6a4a2d, #ff4d5a 60%); }
+
+.metric-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metric-value {
+    font-size: 44px;
+    font-weight: 700;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+}
+
+.metric-caption {
+    font-size: 12px;
+    color: #777;
+}
+
+/* API Beginning Section */
+.api-beginning-section {
+    background: #ffffff;
+    padding: 80px 24px 120px 24px;
+}
+
+.api-container {
+    margin: auto;
+    width: 30%;
+    text-align: left;
+}
+
+.api-title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #0b0b0b;
+    margin: 0 0 40px 0;
+    white-space: nowrap;
+}
+
+.api-feature-card {
+    background: #f3efec;
+    border: 1px solid #ece7e2;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+}
+
+.api-feature-text {
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 1.5;
+}
+
+.api-strong {
+    color: #0b0b0b;
+    font-weight: 700;
+}
+
+.api-subcopy {
+    text-align: center;
+    font-size: 12px;
+    color: #6f6f6f;
+    max-width: 520px;
+    margin: 28px auto 14px auto;
+}
+
+.api-cta { text-align: center; }
+
+.api-btn {
+    background: #0b0b0b;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.api-btn:hover { opacity: 0.9; }
+
+/* Built on the best */
+.built-on-best { background: #ffffff; padding: 60px 0 20px 0; }
+.built-container { width: 30%; margin: 0 auto; text-align: center; }
+.built-title { font-size: 40px; font-weight: 800; color: #0b0b0b; margin: 0 0 16px 0; }
+.built-sub { font-size: 12px; color: #6f6f6f; line-height: 1.5; margin: 0 0 16px 0; }
+.built-github { font-size: 12px; color: #9a9a9a; display: flex; gap: 10px; justify-content: center; align-items: center; }
+.built-gh { color: #9a9a9a; }
+.built-stars { letter-spacing: 2px; color: #bdbdbd; }
+.built-count { color: #9a9a9a; }
+
+/* Security Section */
+.security-section { background: #ffffff; padding: 40px 0 80px 0; }
+.security-card { max-width: 1100px; margin: 0 auto; background: #000; border-radius: 5px; display: grid; grid-template-columns: 1.2fr 1fr; overflow: hidden; }
+.security-left { padding: 48px 56px; color: #fff; }
+.security-title { font-size: 42px; font-weight: 500; line-height: 1.1; margin: 0 0 22px 0; letter-spacing: -0.01em; }
+.security-features { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 40px; }
+.security-feature { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; }
+.sec-icon { width: 28px; height: 28px; border: 2px dotted #9ca3af; border-radius: 4px; opacity: .9; }
+.sec-copy { color: #bfbfbf; font-size: 10px; line-height: 1.5; }
+.sec-head { color: #ffffff; font-weight: 600; margin-bottom: 2px; }
+.sec-desc { color: #bfbfbf; }
+
+.security-right { position: relative; }
+.security-screen { padding: 18px; }
+.security-image { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
+
+@media (max-width: 900px) {
+  .security-card { grid-template-columns: 1fr; }
+  .security-right { order: 2; }
+}
+
+/* Careers Section */
+.careers-section { background: #ffffff; padding: 80px 0 120px 0; }
+.careers-container { width: 30%; margin: 0 auto; text-align: center; }
+.careers-title { font-size: 40px; font-weight: 800; margin: 0 0 8px 0; color: #0b0b0b; }
+.careers-meta { font-size: 11px; color: #9b9b9b; display: flex; gap: 10px; justify-content: center; align-items: center; margin-bottom: 24px; }
+.careers-stars { letter-spacing: 2px; color: #bdbdbd; }
+
+.careers-card { background: #f5f3f1; border: 1px solid #ece9e5; border-radius: 6px; padding: 16px; text-align: left; }
+.careers-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; border-radius: 4px; overflow: hidden; margin-bottom: 14px; }
+.careers-photo { width: 100%; height: 240px; object-fit: cover; display: block; }
+
+.careers-copy { font-size: 12px; color: #6f6f6f; line-height: 1.6; margin: 0 0 14px 0; }
+.careers-copy .bold { color: #0b0b0b; font-weight: 700; }
+
+.careers-cta { text-align: left; }
+.careers-btn { background: #0b0b0b; color: #fff; border: none; border-radius: 22px; padding: 10px 16px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.careers-btn:hover { opacity: 0.9; }
+
+@media (max-width: 900px) {
+    .metrics-grid {
+        grid-template-columns: 110px 1fr;
+        grid-auto-rows: 150px;
+    }
+    .metric-value { font-size: 36px; }
+}
+
+@media (max-width: 600px) {
+    .metrics-container { padding: 0 6px; }
+    .metrics-grid {
+        grid-template-columns: 100px 1fr;
+        grid-auto-rows: 130px;
+    }
+    /* Stack pairs vertically on very small screens */
+}
+
+@media (max-width: 460px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .metric-tile { height: 120px; }
+}
+
+/* Responsive Design for Tech Stack Section */
+@media (max-width: 768px) {
+    .tech-stack-section {
+        padding: 80px 24px;
+    }
+    
+    .tech-stack-title {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    
+    .tech-stack-header {
+        margin-bottom: 60px;
+    }
+    
+    .tech-stack-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .story-content {
+        position: static;
+        margin-bottom: 24px;
+        max-width: none;
+    }
+    
+    .tech-stack-story {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-stack-title {
+        font-size: 32px;
+    }
+    
+    .story-content {
+        padding: 24px;
+    }
+    
+    .story-title {
+        font-size: 20px;
+    }
+}
+
 /* Main Footer Styles */
 .main-footer {
     background: #000000;
@@ -6946,9 +7609,10 @@ width: 60%;    margin-left: auto;
 
 /* Integrations Section v3 */
 .integrations-section-v3 {
-    padding: 120px 0;
+    
     background: #fff;
     text-align: center;
+   
 }
 
 .integrations-container-v3 {
@@ -6999,6 +7663,7 @@ width: 60%;    margin-left: auto;
     background: #f8f9fa;
     padding: 3rem 0;
     border-radius: 16px;
+    padding-bottom: 120px;
 }
 
 .carousel-track-v3 {
